@@ -1,471 +1,400 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Repair</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<meta name="description" content="Expert SM Sample">
+	<meta name="author" content="Anar Huseynov">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css?_v=20230613160144" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230613160144">
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="promo">
-            <div class="container">
-                <header class="header">
-                    <div class="header__top">
-                        <div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo" class="logo__img"></a></div>
-                        <div class="header__hours">
-                            <p class="header__hours-text">SERVICE HOURS</p>
-                            <p class="header__hours-text">Mon - Sat: 7:00 am - 6:00 pm</p>
-                        </div>
-                        <div class="header__call">
-                            <div class="header__img-box">
-                                <a href="tel:555">
-                                    <img src="img/icons/phone.svg" alt="phone img">
-                                </a>
-                            </div>
-                            <div class="header__call-info">
-                                <p class="header__call-text">CALL US</p>
-                                <a class="header__call-link" href="tel:555">(555) Car-Repair</a>
-                            </div>
-                        </div>
-                        <a href="#" class="btn header__btn">Make an Appointment<span class="btn__skew"></span></a>
-                    </div>
-                    <div class="header__bottom" id="sticky-header">
-                            <!-- Hamburger menu -->
-                        <div class="menu-toggle">
-                            <span class="menu-toggle__line"></span>
-                            <span class="menu-toggle__line"></span>
-                            <span class="menu-toggle__line"></span>
-                        </div>
-                        <nav class="menu">
-                            <ul data-spollers="992,max" class="menu__list">
-                                <li class="menu__item">
-                                    <a href="#" class="menu__link menu__link_dropdown" data-goto=".services">Services</a>
-                                    <button data-spoller type="button" class="menu__arrow"></button>
-                                    <ul class="menu__sub-list">
-                                        <li class="menu__sub-item">
-                                            <a href="#" class="menu__sub-link">Services one</a>
-                                        </li>
-                                        <li class="menu__sub-item">
-                                            <a href="#" class="menu__sub-link">Services two</a>
-                                        </li>
-                                        <li class="menu__sub-item">
-                                            <a href="#" class="menu__sub-link">Services three</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu__item"><a href="#" class="menu__link">Specials</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Estimates</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Reviews</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
-                                <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__actions">
-                            <a href="#"><img src="img/icons/search.svg" alt="search" class="header__search"></a>
-                            <div class="header__cart">
-                                <a href="#"><img src="img/icons/cart.svg" alt="" class="header__cart-img"></a>
-                                <span class="header__cart-quanity">2</span>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <h1 class="promo__title _anim-items _anim-no-hide">Top notch service is our main auto motive</h1>
-                <a class="btn promo__btn" href="#">Make an Appointment<span class="btn__skew btn__skew_big"></span></a>
-            </div>
-        </div>
+	<div class="wrapper">
+		<header class="header" data-watch>
+			<div class="header__top">
+				<div class="header__container header__top-wrapper">
+					<div class="header__address">
+						<svg class="header__icon" width="20" height="20">
+							<use xlink:href="img/icons/sprite.svg#icon-map-marker"></use>
+						</svg>
+						<span class="header__text">ул. Р. Бейбутова, дом 59, офис 63</span>
+					</div>
+					<div class="header__contacts">
+						<div class="header__phone">
+							<a href="tel:+994124935556" class="header__link"><svg class="header__icon" width="20" height="20">
+									<use xlink:href="img/icons/sprite.svg#icon-phone"></use>
+								</svg><span class="header__phone-text">(+994)12 4935556</span></a>
+						</div>
+						<div class="header__whatsapp">
+							<a href="https://wa.me/+994707157787" class="header__link"><svg class="header__icon" width="20" height="20">
+									<use xlink:href="img/icons/sprite.svg#icon-whatsapp"></use>
+								</svg><span>(+994)70 7157787</span></a>
+						</div>
+						<div class="header__email">
+							<a href="mailto:info@expertsm.com" class="header__link"><svg class="header__icon" width="20" height="20">
+									<use xlink:href="img/icons/sprite.svg#icon-email"></use>
+								</svg><span>info@expertsm.com</span></a>
+						</div>
+					</div>
+					<div class="header__langs">
+						<select name="langs">
+							<option data-asset="img/icons/flag-ru.svg" value="ru" selected>RU</option>
+							<option data-asset="img/icons/flag-az.svg" value="az">AZ</option>
+							<option data-asset="img/icons/flag-en.svg" value="en">EN</option>
+							<option data-asset="img/icons/flag-tr.svg" value="tr">TR</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div data-sticky-header class="header__body">
+				<div class="header__container header__body-wrapper">
+					<div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo" class="logo__img"></a></div>
+					<nav role="navigation" data-has-submenu class="main-menu">
+						<ul class="main-menu__list main-navigation">
+							<li class="main-menu__item link-active"><a href="#" class="main-menu__link">Главная</a></li>
+							<li class="main-menu__item" data-dropdown><a href="#" class="main-menu__link">О компании</a>
+								<ul class="submenu">
+									<li class="submenu__item"><a href="#" class="submenu__link">Наши клиенты</a></li>
+									<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+								</ul>
+							</li>
+							<li class="main-menu__item" data-dropdown><a href="#" class="main-menu__link">Услуги</a>
+								<ul class="submenu">
+									<li class="submenu__item" data-dropdown><a href="#" class="submenu__link">Юридические услуги</a>
+										<ul class="submenu">
+											<li class="submenu__item"><a href="#" class="submenu__link">Антиколлекторские услуги</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Консультация по гражданским, административным и уголовным делам</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Договорное право</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Интеллектуальная собственность</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Коммерческая практика</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Корпоративная практика</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Налоговая практика</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Оценочные услуги</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Правовой аудит (Due Diligence)</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Недвижимость, Строительство, Земля</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Юридическое консультирование</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Представительство в суде</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Ведение дел в судах общей юрисдикции</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Защита деловой репутации</a></li>
+										</ul>
+									</li>
+									<li class="submenu__item"><a href="#" class="submenu__link">Бухгалтерские услуги</a></li>
+									<li class="submenu__item" data-dropdown><a href="#" class="submenu__link">Миграционные услуги</a>
+										<ul class="submenu">
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши клиенты</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+										</ul>
+									</li>
+									<li class="submenu__item" data-dropdown><a href="#" class="submenu__link">Консалтинговые услуги</a>
+										<ul class="submenu">
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши клиенты</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+										</ul>
+									</li>
+									<li class="submenu__item" data-dropdown><a href="#" class="submenu__link">Инвестиционные проекты</a>
+										<ul class="submenu">
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши клиенты</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+											<li class="submenu__item"><a href="#" class="submenu__link">Наши партнеры</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Блог</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Карьера</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+					<a href="#" class="btn header__btn"><span>Напишите нам</span><svg class="header__btn-icon">
+							<use xlink:href="img/icons/sprite.svg#icon-email"></use>
+						</svg></a>
+					<button class="icon-menu" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu toggle"><span aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</header>
 
-        <main class="main">
-            <section class="about-us">
-                <div class="container">
-                    <div class="about-us__wrapper">
-                        <h4 class="subtitle about-us__subtitle">Who we are</h4>
-                        <h2 class="title about-us__title">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
-                        <p class="text about-us__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea <a href="#callback" class="_popup-link">commodi</a> consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-                        <div class="about-us__img-block">
-<picture><source srcset="img/about/about.webp" type="image/webp"><source srcset="img/about/about.jpg" type="image/jpeg"><img src="img/about/about.jpg" alt="about us image" class="about-us__img"></picture>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="promise">
-                <div class="container">
-                    <h4 class="subtitle promise__subtitle">OUR PROMISE TO YOU</h4>
-                    <h2 class="title promise__title">Sed perspiciatis omnis iste natus</h2>
-                    <div class="promise__items _anim-items">
-                        <div class="promise__column promise__column_1">
-                            <div class="promise__item item-promise">
-                                <div class="item-promise__img-block">
-                                    <img src="img/icons/promise/promise-icon1.svg" alt="promise icon" class="item-promise__img">
-                                </div>
-                                <div class="item-promise__info">
-                                    <h3 class="item-title item-promise__title">Quality service. Everytime.</h3>
-                                    <p class="text item-promise__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promise__column promise__column_2">
-                            <div class="promise__item item-promise">
-                                <div class="item-promise__img-block">
-                                    <img src="img/icons/promise/promise-icon2.svg" alt="promise icon" class="item-promise__img">
-                                </div>
-                                <div class="item-promise__info">
-                                    <h3 class="item-title item-promise__title">Services by certified pros</h3>
-                                    <p class="text item-promise__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="promise__column promise__column_3">
-                            <div class="promise__item item-promise">
-                                <div class="item-promise__img-block">
-                                    <img src="img/icons/promise/promise-icon3.svg" alt="promise icon" class="item-promise__img">
-                                </div>
-                                <div class="item-promise__info">
-                                    <h3 class="item-title item-promise__title">Real people. Honest work.</h3>
-                                    <p class="text item-promise__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="video">
-                <div class="container">
-                    <div class="video__wrapper">
-                        <h2 class="title title_white video__title">Nemo enim ipsam voluptatem quia voluptas in proident</h2>
-                        <div class="video__play-btn video-btn">
-                            <div class="video-btn__first-circle">
-                                <div class="video-btn__inner">
-                                    <div class="video-btn__inner-white">
-                                        <a href="#">
-                                            <img src="img/icons/play_arrow.svg" alt="play icon" class="video-btn__icon">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="services">
-                <div class="container">
-                    <h4 class="subtitle">Our Services</h4>
-                    <h2 class="title services__title">Sed perspiciatis omnis iste natus</h2>
-                    <div class="services__cards">
-                        <div class="services__card card-services">
-                            <img src="img/icons/services/services1.svg" alt="service image" class="card-services__img">
-                            <h3 class="item-title card-services__title">Multi Point Inspections</h3>
-                            <p class="text card-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                        </div>
-                        <div class="services__card card-services">
-                            <img src="img/icons/services/services2.svg" alt="service image" class="card-services__img">
-                            <h3 class="item-title card-services__title">Auto Repair</h3>
-                            <p class="text card-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                        </div>
-                        <div class="services__card card-services">
-                            <img src="img/icons/services/services3.svg" alt="service image" class="card-services__img">
-                            <h3 class="item-title card-services__title">Auto Maintenance</h3>
-                            <p class="text card-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                        </div>
-                        <div class="services__card card-services">
-                            <img src="img/icons/services/services4.svg" alt="service image" class="card-services__img">
-                            <h3 class="item-title card-services__title">Tires</h3>
-                            <p class="text card-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                        </div>
-                        <div class="services__card card-services">
-                            <img src="img/icons/services/services5.svg" alt="service image" class="card-services__img">
-                            <h3 class="item-title card-services__title">Service Warranty</h3>
-                            <p class="text card-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                        </div>
-                        <div class="services__card card-services">
-                            <img src="img/icons/services/services6.svg" alt="service image" class="card-services__img">
-                            <h3 class="item-title card-services__title">Shop Online</h3>
-                            <p class="text card-services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p>
-                        </div>
-                    </div>
-                    <div class="services__btn-block">
-                        <a href="#" class="btn services__btn">Learn More<span class="btn__skew btn__skew_big"></span></a>
-                    </div>
-                </div>
-            </section>
-            <section class="appointment">
-                <div class="container">
-                    <div class="appointment__wrapper">
-                        <div class="appointment__form-block">
-                            <h2 class="title appointment__title">Make an appointment</h2>
-                            <form action="#" class="appointment__form form-appointment">
-                                <div class="form-appointment__line">
-                                    <div class="form-appointment__input-block">
-                                        <label for="name">Name</label>
-                                        <input id="name" autocomplete="off" type="text" name="name" data-error="Please, fill this field right." data-value="Name" class="form-appointment__input _req">
-                                    </div>
-                                    <div class="form-appointment__input-block">
-                                        <label for="email">Email</label>
-                                        <input id="email" autocomplete="off" type="text" name="email" data-error="Please, fill this field right." data-value="Email" class="form-appointment__input _req _email">
-                                    </div>
-                                </div>
-                                <div class="form-appointment__line">
-                                    <div class="form-appointment__input-block">
-                                        <label for="phone">Phone Number</label>
-                                        <input id="phone" autocomplete="off" type="text" name="phone" data-error="Ошибка" data-value="Phone Number" class="form-appointment__input ">
-                                    </div>
-                                    <div class="form-appointment__input-block">
-                                        <label for="service">Select Service</label>
-                                        <input id="service" autocomplete="off" type="text" name="service" data-error="Ошибка" data-value="Select Service" class="form-appointment__input">
-                                    </div>
-                                </div>
-                                <div class="form-appointment__line-text">
-                                    <label for="text">Tell us about the car needing service(s)</label>
-                                    <textarea name="text" id="text" data-error="Please, fill this field." data-value="Tell us about the car needing service(s)" class="form-appointment__text _req"></textarea>
-                                </div>
-                                <button class="btn form-appointment__btn" type="submit">Make an Appointment<span class="btn__skew btn__skew_big"></span></button>
-                            </form>
-                        </div>
-                        <div class="appointment__info">
-                            <div class="appointment__info-title">Maxime placeat facere possimus omnis </div>
-                            <div class="appointment__number">17k</div>
-                            <div class="appointment__text">customers served (and counting)</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="gallery">
-                <div class="container">
-                    <div class="gallery__wrapper">
-                        <h4 class="subtitle">GALLERY & LIVE STREAMS</h4>
-                        <h2 class="title gallery__title">Check out our hard workers</h2>
-                        <div class="gallery__tabs tabs-gallery _tabs">
-                            <nav class="tabs-gallery__nav">
-                                <div class="tabs-gallery__item _tabs-item">Gallery</div>
-                                <div class="tabs-gallery__item tabs-gallery__item_online _tabs-item _active">Live stream: Bay 1</div>
-                                <div class="tabs-gallery__item tabs-gallery__item_online _tabs-item">Live stream: Bay 2</div>
-                                <div class="tabs-gallery__item tabs-gallery__item_online tabs-gallery__item_online_off _tabs-item">Live stream: Bay 3</div>
-                            </nav>
-                            <div class="tabs-gallery__body">
-                                <div class="tabs-gallery__block _tabs-block">
-<picture><source srcset="img/gallery/stream2.webp" type="image/webp"><source srcset="img/gallery/stream2.jpg" type="image/jpeg"><img src="img/gallery/stream2.jpg" alt="stream image" class="tabs-gallery__img"></picture>
-                                </div>
-                                <div class="tabs-gallery__block _tabs-block _active">
-<picture><source srcset="img/gallery/stream1.webp" type="image/webp"><source srcset="img/gallery/stream1.jpg" type="image/jpeg"><img src="img/gallery/stream1.jpg" alt="stream image" class="tabs-gallery__img"></picture>
-                                </div>
-                                <div class="tabs-gallery__block _tabs-block">
-<picture><source srcset="img/gallery/stream2.webp" type="image/webp"><source srcset="img/gallery/stream2.jpg" type="image/jpeg"><img src="img/gallery/stream2.jpg" alt="stream image" class="tabs-gallery__img"></picture>
-                                </div>
-                                <div class="tabs-gallery__block _tabs-block">
-<picture><source srcset="img/gallery/stream1.webp" type="image/webp"><source srcset="img/gallery/stream1.jpg" type="image/jpeg"><img src="img/gallery/stream1.jpg" alt="stream image" class="tabs-gallery__img"></picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="customers _anim-items">
-                <div class="container">
-                    <div class="customers__wrapper">
-                        <div class="customers__column customers__column_info">
-                            <div class="customers__info">
-                                <h4 class="subtitle customers__subtitle">Our CUSTOMERS</h4>
-                                <h2 class="title customers__title">Illum qui dolorem eum quo voluptas ut distinctio</h2>
-                            </div>
-                        </div>
-                        <div class="customers__column">
-                            <div class="customers__item">
-                                <p class="text customers__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”</p>
-                                <div class="customers__item-bottom">
-                                    <div class="customers__img-block">
-<picture><source srcset="img/customers/customer1.png"><img src="img/customers/customer1.png" alt="customer image" class="customers__img"></picture>
-                                    </div>
-                                    <div class="customers__name">Cullen Bohannon</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="customers__column">
-                            <div class="customers__item">
-                                <p class="text customers__text">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ipsam voluptatem aspernatur.”</p>
-                                <div class="customers__item-bottom">
-                                    <div class="customers__img-block">
-<picture><source srcset="img/customers/customer2.png"><img src="img/customers/customer2.png" alt="customer image" class="customers__img"></picture>
-                                    </div>
-                                    <div class="customers__name">Jennifer Thomas</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="impact">
-                <div class="container">
-                    <div class="impact__wrapper">
-                        <h4 class="subtitle">OUR IMPACT</h4>
-                        <h2 class="title title_white impact__title">Nemo enim ipsam voluptatem quia voluptas</h2>
-                        <div class="impact__items">
-                            <div class="impact__column">
-                                <div class="impact__item">
-                                    <div class="impact__icon">
-                                        <img src="img/icons/impact/car_oil.svg" alt="impact icon" class="impact__icon-img">
-                                    </div>
-                                    <div class="impact__item-block">
-                                        <div class="impact__number">16k+</div>
-                                        <div class="impact__text">Oil changes</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="impact__column">
-                                <div class="impact__item">
-                                    <div class="impact__icon">
-                                        <img src="img/icons/impact/car_transmission.svg" alt="impact icon" class="impact__icon-img">
-                                    </div>
-                                    <div class="impact__item-block">
-                                        <div class="impact__number">13k+</div>
-                                        <div class="impact__text">Transmission repairs</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="impact__column">
-                                <div class="impact__item">
-                                    <div class="impact__icon">
-                                        <img src="img/icons/impact/car_alignment.svg" alt="impact icon" class="impact__icon-img">
-                                    </div>
-                                    <div class="impact__item-block">
-                                        <div class="impact__number">15k+</div>
-                                        <div class="impact__text">Alignments made</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="impact__column">
-                                <div class="impact__item">
-                                    <div class="impact__icon">
-                                        <img src="img/icons/impact/car_engine.svg" alt="impact icon" class="impact__icon-img">
-                                    </div>
-                                    <div class="impact__item-block">
-                                        <div class="impact__number">11,500+</div>
-                                        <div class="impact__text">Engines repaired</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="impact__img">
-<picture><source srcset="img/impact/impact-car.webp" type="image/webp"><source srcset="img/impact/impact-car.jpg" type="image/jpeg"><img src="img/impact/impact-car.jpg" alt="car image" class="impact__car-img"></picture>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="action">
-                <div class="container">
-                    <div class="action__wrapper">
-                        <p class="action__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <a href="#" class="btn action__btn">Make an Appointment<span class="btn__skew btn__skew_big"></span></a>
-                    </div>
-                </div>
-            </div>
-        <!--Main End  -->
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__body">
-                    <div class="footer__info">
-                        <div class="footer__logo"><a href="#"><img src="img/logo-footer.svg" alt="Logo" class="footer__logo-img"></a></div>
-                        <p class="footer__text">This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua.</p>
-                        <div class="footer__social social">
-                            <ul class="social__list">
-                                <li class="social__items">
-                                    <a href="#" class="social__link"><img src="img/icons/social/facebook.svg" alt="social icon" class="social__icon"></a>
-                                </li>
-                                <li class="social__items">
-                                    <a href="#" class="social__link"><img src="img/icons/social/twitter.svg" alt="social icon" class="social__icon"></a>
-                                </li>
-                                <li class="social__items">
-                                    <a href="#" class="social__link"><img src="img/icons/social/instagram.svg" alt="social icon" class="social__icon"></a>
-                                </li>
-                                <li class="social__items">
-                                    <a href="#" class="social__link"><img src="img/icons/social/youtube.svg" alt="social icon" class="social__icon"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__explore">
-                        <h5 class="footer__title">EXPLORE LINKS</h5>
-                        <div class="footer__nav">
-                            <nav class="footer__menu">
-                                <ul class="footer__menu-list">
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">About</a>
-                                    </li>
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">Services</a>
-                                    </li>
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">Specials</a>
-                                    </li>
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">Estimates</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <nav class="footer__menu">
-                                <ul class="footer__menu-list">
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">Reviews</a>
-                                    </li>
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">Shop</a>
-                                    </li>
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">Careers</a>
-                                    </li>
-                                    <li class="footer__menu-item">
-                                        <a href="#" class="footer__menu-link">FAQs</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="footer__contact">
-                        <h5 class="footer__title">CONTACT</h5>
-                        <div class="footer__contact-block">
-                            <p class="footer__contact-text footer__contact-text_place">321 Pikes Place Parkway Seattle, WA 54321</p>
-                            <a href="tel:5557654321" class="footer__contact-text footer__contact-text_phone">(555) 765-4321</a>
-                            <a href="mailto:info@company.com" class="footer__contact-text footer__contact-text_email">Info@company.com</a>
-                            <p class="footer__contact-text footer__contact-text_hours">Mon - Sat:  7:000 am - 6:00 pm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="container">
-                    <div class="footer__copyright-wrapper">
-                        <p class="footer__copyright-text">Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</p>
-                        <p class="footer__copyright-text">&copy; 2018 Company. <a href="#" class="footer__link">Privacy Policy</a><span> | </span> <a href="#" class="footer__link">Terms & Conditions</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="up-btn">
-            <!-- <svg class="scrollToTopBtn" role="img" xmlns="http://www.w3.org/2000/svg" fill="#C40B0B" viewBox="0 0 512 512"><path  d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path></svg> -->
-            <svg class="scrollToTopBtn" xmlns="http://www.w3.org/2000/svg" fill="#C40B0B" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/></svg>
-        </div>
 
-    <!--Wrapper End  -->
-    </div>
-    <div class="popup popup_callback">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil similique rem architecto, consectetur accusamus beatae deserunt eius laborum nemo aliquid in culpa labore repudiandae accusantium expedita sit ratione deleniti? Quia!
-            </div>
-        </div>
-    </div>
-    <div class="popup popup_massagename-message">
-        <div class="popup__content">
-            <div class="popup__body">
-                <div class="popup__close"></div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="js/vendors.min.js"></script>
-    <script src="js/script.min.js"></script>
+		<main class="page">
+			<section class="slider">
+				<div class="swiper main-slider">
+					<div class="swiper-wrapper main-slider__wrapper">
+						<div class="swiper-slide main-slider__slide slide-main">
+							<div class="slide-main__container">
+								<h1 class="slide-main__title slide-right">Expert SM</h1>
+								<h2 class="slide-main__subtitle slide-left">Каждый шаг, который вы делаете с нами, — это ваш шаг к успеху.</h2>
+							</div>
+						</div>
+						<div class="swiper-slide main-slider__slide slide-main">
+							<div class="slide-main__container">
+								<h2 class="slide-main__title">Заголовок 2</h2>
+								<h2 class="slide-main__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur tempore quia nesciunt vero. Soluta, consequatur aut! Saepe illo provident velit, tempora libero eum repudiandae, rem quod animi veritatis ex aperiam.</h2>
+							</div>
+						</div>
+						<div class="swiper-slide main-slider__slide slide-main">
+							<div class="slide-main__container">
+								<h2 class="slide-main__title">Заголовок 3</h2>
+								<h2 class="slide-main__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, facilis? Illum doloremque molestiae voluptate! Libero accusamus quibusdam molestias earum ab reprehenderit sit reiciendis esse. Saepe beatae exercitationem modi adipisci similique!</h2>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination main-slider__pagination"></div>
+				</div>
+			</section>
+			<section class="services mt-md">
+				<div class="services__container">
+					<h2 class="title-secondary">Услуги</h2>
+					<div class="services__items mt-md">
+						<figure class="services__item item-service">
+							<a href="#" class="item-service__wrapper">
+								<div class="item-service__img-block">
+									<picture><source srcset="img/law-service/law-service.webp" type="image/webp"><img src="img/law-service/law-service.webp" alt="Юридические услуги" class="item-service__img"></picture>
+								</div>
+								<figcaption class="item-service__caption">
+									<div class="item-service__title-block">
+										<h3 class="item-service__title">Юридические услуги</h3>
+
+									</div>
+									<div class="item-service__link-block">
+										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+											</svg> </a>
+									</div>
+								</figcaption>
+							</a>
+
+						</figure>
+						<figure class="services__item item-service">
+							<a href="#" class="item-service__wrapper">
+								<div class="item-service__img-block">
+									<picture><source srcset="img/law-service/migration-service.webp" type="image/webp"><img src="img/law-service/migration-service.webp" alt="Миграционные услуги" class="item-service__img"></picture>
+								</div>
+								<figcaption class="item-service__caption">
+									<div class="item-service__title-block">
+										<h3 class="item-service__title">Миграционные услуги</h3>
+
+									</div>
+									<div class="item-service__link-block">
+										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+											</svg> </a>
+									</div>
+								</figcaption>
+							</a>
+						</figure>
+						<figure class="services__item item-service">
+							<a href="#" class="item-service__wrapper">
+								<div class="item-service__img-block">
+									<picture><source srcset="img/law-service/audit-service.webp" type="image/webp"><img src="img/law-service/audit-service.webp" alt="Аудит, консалтинг, бухгалтерский аутсорсин" class="item-service__img"></picture>
+								</div>
+								<figcaption class="item-service__caption">
+									<div class="item-service__title-block">
+										<h3 class="item-service__title">Аудит, консалтинг, бухгалтерский аутсорсинг</h3>
+
+									</div>
+									<div class="item-service__link-block">
+										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+											</svg> </a>
+									</div>
+								</figcaption>
+							</a>
+
+						</figure>
+						<figure class="services__item item-service">
+							<a href="#" class="item-service__wrapper">
+								<div class="item-service__img-block">
+									<picture><source srcset="img/law-service/licence-service.webp" type="image/webp"><img src="img/law-service/licence-service.webp" alt="Лицензирование бизнеса" class="item-service__img"></picture>
+								</div>
+								<figcaption class="item-service__caption">
+									<div class="item-service__title-block">
+										<h3 class="item-service__title">Лицензирование бизнеса</h3>
+
+									</div>
+									<div class="item-service__link-block">
+										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+											</svg> </a>
+									</div>
+								</figcaption>
+							</a>
+
+						</figure>
+						<figure class="services__item item-service">
+							<a href="#" class="item-service__wrapper">
+								<div class="item-service__img-block">
+									<img src="img/law-service/tax-service.webp" alt="Международное налоговое планирование
+										" class="item-service__img">
+								</div>
+								<figcaption class="item-service__caption">
+									<div class="item-service__title-block">
+										<h3 class="item-service__title">Международное налоговое планирование
+										</h3>
+
+									</div>
+									<div class="item-service__link-block">
+										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+											</svg> </a>
+									</div>
+								</figcaption>
+							</a>
+
+						</figure>
+					</div>
+				</div>
+			</section>
+			<section class="contacts mt-lg">
+				<div class="contacts__container">
+					<div class="contacts__map">
+						<h2 class="title-secondary contacts__title">Как нас найти</h2>
+						<div id="map" class="mt-md"></div>
+					</div>
+					<div class="contacts__contact-us">
+						<h2 class="title-secondary contacts__title">Связь с нами</h2>
+						<form action="#" novalidate class="contacts__form form-contact mt-md">
+							<fieldset class="form-contact__header">
+								<legend>Name and email</legend>
+								<div class="form-contact__input-block">
+									<input type="text" id="name" data-error-msg name="name" autocomplete="name" required class="form-contact__input" placeholder="Ваше имя">
+									<label for="name" class="form-contact__label">Имя</label>
+									<span class="form-block-error" aria-live="polite"></span>
+								</div>
+								<div class="form-contact__input-block">
+									<input type="email" name="email" id="email" autocomplete="email" required data-error-msg placeholder="Ваш email*" class="form-contact__input">
+									<label for="email" class="form-contact__label">Email</label>
+									<span class="form-block-error" aria-live="polite"></span>
+								</div>
+							</fieldset>
+							<fieldset class="form-contact__header">
+								<legend>Company and phone number</legend>
+								<div class="form-contact__input-block">
+									<input type="text" id="company" name="company" autocomplete="company" class="form-contact__input" placeholder="Название компании">
+									<label for="company" class="form-contact__label">Компания</label>
+									<span class="form-block-error" aria-live="polite"></span>
+								</div>
+								<div class="form-contact__input-block">
+									<input type="text" name="phone" id="phone" autocomplete="phone" data-mask="phone" placeholder="Ваш телефон" class="form-contact__input">
+									<label for="phone" class="form-contact__label">Телефон</label>
+									<span class="form-block-error" aria-live="polite"></span>
+								</div>
+							</fieldset>
+							<fieldset class="form-contact__body">
+								<legend>Message</legend>
+								<textarea name="message" id="message" placeholder="Ваше сообщение*" required data-error-msg rows="10" class="form-contact__message"></textarea>
+								<label for="email" class="form-contact__label">Сообщение</label>
+								<span class="form-block-error" aria-live="polite"></span>
+							</fieldset>
+							<fieldset id="form-contact__footer" class="form-contact__footer">
+								<legend>Action</legend>
+								<div class="form-contact__agree">
+									<input class="form-contact__agree-check" type="checkbox" name="agree" id="agree" checked required>
+									<label for="agree" class="form-contact__agree-text"><span>Я согласен с <a href="#" data-popup="#privacy">Политикой конфиденциальности</a></span> </label>
+								</div>
+								<button type="submit" class="btn form-contact__btn form-loading">Отправить</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer mt-md">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__info info-footer">
+						<div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo" class="logo__img"></a></div>
+						<div class="info-footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolore aspernatur quibusdam magni tempora esse officiis explicabo sit autem, quisquam quo laudantium tenetur cupiditate unde temporibus ipsa aut error accusamus.
+						</div>
+						<div class="info-footer__location">
+							<svg class="info-footer__icon">
+								<use xlink:href="img/icons/sprite.svg#icon-map-marker"></use>
+							</svg>
+							<p class="info-footer__content">ул Р. Бейбутова <br> дом 59 <br> офис 63</p>
+						</div>
+						<div class="info-footer__phone">
+							<svg class="info-footer__icon">
+								<use xlink:href="img/icons/sprite.svg#icon-mobile"></use>
+							</svg>
+							<a href="tel:994707157787" class="info-footer__link">(+994)70 715778</a>
+						</div>
+						<div class="info-footer__phone">
+							<svg class="info-footer__icon">
+								<use xlink:href="img/icons/sprite.svg#icon-phone-office"></use>
+							</svg>
+							<a href="tel:+994124935556" class="info-footer__link">(+994)12 4935556</a>
+						</div>
+
+						<div class="info-footer__email">
+							<svg class="info-footer__icon">
+								<use xlink:href="img/icons/sprite.svg#icon-email"></use>
+							</svg>
+							<a href="mailto:info@expertsm.com" class="info-footer__link">info@expertsm.com</a>
+						</div>
+					</div>
+					<div class="footer__nav">
+						<nav class="footer__menu">
+							<h3 class="footer__title">Главное меню</h3>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Главная</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Услуги</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Блог</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Карьера</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+							</ul>
+						</nav>
+						<nav class="footer__menu">
+							<h3 class="footer__title">Услуги</h3>
+							<ul class="footer__menu-list">
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Юридические услуги</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Бухгалтерские услуги</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Консалтинговые услуги</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Инвестиционные проекты</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Банкротство</a></li>
+								<li class="footer__menu-item"><a href="#" class="footer__menu-link">Взыскание задолженности</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Expert SM &copy; - 2023</b> / Earum aut mollitia laboriosam saepe minima fuga error voluptas cumque impedit!</p>
+				</div>
+
+			</div>
+		</footer>
+		<!-- <button id="scroll-up" class="scroll-up" aria-label="Scroll up">
+  <svg class="scroll-up__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <title>Scroll up</title>
+    <path d="M26.297 20.797l-2.594 2.578c-0.391 0.391-1.016 0.391-1.406 0l-8.297-8.297-8.297 8.297c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.578c-0.391-0.391-0.391-1.031 0-1.422l11.594-11.578c0.391-0.391 1.016-0.391 1.406 0l11.594 11.578c0.391 0.391 0.391 1.031 0 1.422z"></path>
+    </svg>
+</button>
+<span data-watch aria-hidden="true" class="scroll-up-anchor"></span> -->
+	</div>
+
+	<script src="js/app.min.js?_v=20230613160144"></script>
 </body>
+
 </html>
