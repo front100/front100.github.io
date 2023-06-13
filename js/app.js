@@ -37254,21 +37254,6 @@
         map.on("load", (() => {
             (new maps_min.Marker).setLngLat(center).addTo(map);
         }));
-        const markerHeight = 50, markerRadius = 10, linearOffset = 25;
-        const popupOffsets = {
-            top: [ 0, 0 ],
-            "top-left": [ 0, 0 ],
-            "top-right": [ 0, 0 ],
-            bottom: [ 0, -markerHeight ],
-            "bottom-left": [ linearOffset, -1 * (markerHeight - markerRadius + linearOffset) ],
-            "bottom-right": [ -linearOffset, -1 * (markerHeight - markerRadius + linearOffset) ],
-            left: [ markerRadius, -1 * (markerHeight - markerRadius) ],
-            right: [ -markerRadius, -1 * (markerHeight - markerRadius) ]
-        };
-        new maps_min.Popup({
-            offset: popupOffsets,
-            className: "my-class"
-        }).setLngLat(center).setHTML("<h2>Expert SM</h2>").addTo(map);
         window["FLS"] = false;
         isWebp();
         menuInit();
