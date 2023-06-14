@@ -17,8 +17,8 @@
 	<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css?_v=20230614202114">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230614202114">
+	<link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css?_v=20230614203303">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230614203303">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
 			<div data-sticky-header class="header__body">
 				<div class="header__container header__body-wrapper">
 					<div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo" class="logo__img"></a></div>
-					<nav data-has-submenu class="main-menu">
+					<nav data-has-submenu class="main-menu" id="primary-navigation">
 						<ul class="main-menu__list main-navigation">
 							<li class="main-menu__item link-active"><a href="#" class="main-menu__link">Главная</a></li>
 							<li class="main-menu__item" data-dropdown><a href="#" class="main-menu__link">О компании</a>
@@ -170,100 +170,108 @@
 				<div class="services__container">
 					<h2 class="title-secondary">Услуги</h2>
 					<div class="services__items mt-md">
-						<article class="services__item item-service">
+						<div class="services__item item-service">
 
 							<figure class="item-service__img-block">
 								<a href="#" class="item-service__wrapper">
 									<picture><source srcset="img/law-service/law-service.webp" type="image/webp"><img src="img/law-service/law-service.webp" alt="Юридические услуги" class="item-service__img"></picture>
 								</a>
 							</figure>
-							<article class="item-service__caption">
-								<article class="item-service__title-block">
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
 									<h3 class="item-service__title">Юридические услуги</h3>
-								</article>
-								<article class="item-service__link-block">
+								</div>
+								<div class="item-service__link-block">
 									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
 											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
 										</svg> </a>
-								</article>
-							</article>
+								</div>
+							</div>
 
 
-						</article>
-						<!-- <article class="services__item item-service">
-								
-									<div class="item-service__img-block">
-										<a href="#" class="item-service__wrapper"><picture><source srcset="img/law-service/migration-service.webp" type="image/webp"><img src="img/law-service/migration-service.webp" alt="Миграционные услуги" class="item-service__img"></picture></a>
-										
-									</div>
-									<div class="item-service__caption">
-										<div class="item-service__title-block">
-											<h3 class="item-service__title">Миграционные услуги</h3>
-	
-										</div>
-										<div class="item-service__link-block">
-											<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon"><use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use></svg> </a>
-										</div>
-									</div>
-								
-							</article>
-							<article class="services__item item-service">
-								
-									<div class="item-service__img-block">
-										<a href="#" class="item-service__wrapper">
-										<picture><source srcset="img/law-service/audit-service.webp" type="image/webp"><img src="img/law-service/audit-service.webp" alt="Аудит, консалтинг, бухгалтерский аутсорсин" class="item-service__img"></picture>
-									</a>
-									</div>
-									<div class="item-service__caption">
-										<div class="item-service__title-block">
-											<h3 class="item-service__title">Аудит, консалтинг, бухгалтерский аутсорсинг</h3>
-	
-										</div>
-										<div class="item-service__link-block">
-											<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon"><use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use></svg> </a>
-										</div>
-									</div>
-								
+						</div>
+						<div class="services__item item-service">
 
-							</article>
-							<atricle class="services__item item-service">
-								
-									<div class="item-service__img-block">
-										<a href="#" class="item-service__wrapper"><picture><source srcset="img/law-service/licence-service.webp" type="image/webp"><img src="img/law-service/licence-service.webp" alt="Лицензирование бизнеса" class="item-service__img"></picture></a>
-										
-									</div>
-									<div class="item-service__caption">
-										<div class="item-service__title-block">
-											<h3 class="item-service__title">Лицензирование бизнеса</h3>
-	
-										</div>
-										<div class="item-service__link-block">
-											<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon"><use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use></svg> </a>
-										</div>
-									</div>
-								
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper"><picture><source srcset="img/law-service/migration-service.webp" type="image/webp"><img src="img/law-service/migration-service.webp" alt="Миграционные услуги" class="item-service__img"></picture></a>
 
-							</atricle>
-							<atricle class="services__item item-service">
-								
-									<div class="item-service__img-block">
-										<a href="#" class="item-service__wrapper"><img src="img/law-service/tax-service.webp" alt="Международное налоговое планирование
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Миграционные услуги</h3>
+
+								</div>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
+
+						</div>
+						<div class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper">
+									<picture><source srcset="img/law-service/audit-service.webp" type="image/webp"><img src="img/law-service/audit-service.webp" alt="Аудит, консалтинг, бухгалтерский аутсорсин" class="item-service__img"></picture>
+								</a>
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Аудит, консалтинг, бухгалтерский аутсорсинг</h3>
+
+								</div>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper"><picture><source srcset="img/law-service/licence-service.webp" type="image/webp"><img src="img/law-service/licence-service.webp" alt="Лицензирование бизнеса" class="item-service__img"></picture></a>
+
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Лицензирование бизнеса</h3>
+
+								</div>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper"><img src="img/law-service/tax-service.webp" alt="Международное налоговое планирование
 											" class="item-service__img"></a>
-										
-									</div>
-									<div class="item-service__caption">
-										<div class="item-service__title-block">
-											<h3 class="item-service__title">Международное налоговое планирование
-											</h3>
-	
-										</div>
-										<div class="item-service__link-block">
-											<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon"><use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use></svg> </a>
-										</div>
-									</div>
-								
 
-							</atricle> -->
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Международное налоговое планирование
+									</h3>
+
+								</div>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
+
+
+						</div>
 					</div>
 				</div>
 			</section>
@@ -339,26 +347,26 @@
 							<lord-icon src="https://cdn.lordicon.com/uutnmngi.json" trigger="hover" colors="primary:#2228c3,secondary:#e7b13c">
 							</lord-icon>
 							<figcaption class="achievements__description"><span class="achievements__number" id="a1" data-watch data-watch-once>0</span>+</figcaption>
-							<h3 class="achievements__title">лет</h3>
+							<span class="achievements__title">лет</span>
 						</figure>
 						<figure class="achievements__item">
 							<lord-icon src="https://cdn.lordicon.com/amxnacxd.json" trigger="hover" colors="primary:#2228c3,secondary:#e7b13c">
 							</lord-icon>
 							<figcaption class="achievements__description"><span class="achievements__number" id="a2" data-watch data-watch-once>9000</span>+</figcaption>
-							<h3 class="achievements__title">клиентов</h3>
+							<span class="achievements__title">клиентов</span>
 						</figure>
 						<figure class="achievements__item">
 							<lord-icon src="https://cdn.lordicon.com/ggqtvqxi.json" trigger="hover" colors="primary:#2228c3,secondary:#e7b13c">
 							</lord-icon>
 							<figcaption class="achievements__description"><span class="achievements__number" id="a3" data-watch data-watch-once>0</span>+</figcaption>
-							<h3 class="achievements__title">проектов</h3>
+							<span class="achievements__title">проектов</span>
 						</figure>
 						<figure class="achievements__item">
 							<lord-icon src="https://cdn.lordicon.com/ytuosppc.json" trigger="hover" colors="primary:#2228c3,secondary:#e7b13c">
 							</lord-icon>
 							<figcaption class="achievements__description"><span class="achievements__number" id="a4" data-watch data-watch-once>99900</span>+</figcaption>
-							<h3 class="achievements__title">ответственности
-							</h3>
+							<span class="achievements__title">ответственности
+							</span>
 						</figure>
 					</div>
 				</div>
@@ -375,12 +383,12 @@
 							<fieldset class="form-contact__header">
 								<legend>Name and email</legend>
 								<div class="form-contact__input-block">
-									<input type="text" id="name" data-error-msg name="name" autocomplete="name" required class="form-contact__input" placeholder="Ваше имя*">
+									<input type="text" id="name" data-error-msg name="name" required class="form-contact__input" placeholder="Ваше имя*">
 									<label for="name" class="form-contact__label">Имя</label>
 									<span class="form-block-error" aria-live="polite"></span>
 								</div>
 								<div class="form-contact__input-block">
-									<input type="email" name="email" id="email" autocomplete="email" required data-error-msg placeholder="Ваш email*" class="form-contact__input">
+									<input type="email" name="email" id="email" required data-error-msg placeholder="Ваш email*" class="form-contact__input">
 									<label for="email" class="form-contact__label">Email</label>
 									<span class="form-block-error" aria-live="polite"></span>
 								</div>
@@ -388,12 +396,12 @@
 							<fieldset class="form-contact__header">
 								<legend>Company and phone number</legend>
 								<div class="form-contact__input-block">
-									<input type="text" id="company" name="company" autocomplete="company" class="form-contact__input" placeholder="Название компании">
+									<input type="text" id="company" name="company" class="form-contact__input" placeholder="Название компании">
 									<label for="company" class="form-contact__label">Компания</label>
 									<span class="form-block-error" aria-live="polite"></span>
 								</div>
 								<div class="form-contact__input-block">
-									<input type="text" name="phone" id="phone" autocomplete="phone" data-mask="phone" placeholder="Ваш телефон" class="form-contact__input">
+									<input type="text" name="phone" id="phone" data-mask="phone" placeholder="Ваш телефон" class="form-contact__input">
 									<label for="phone" class="form-contact__label">Телефон</label>
 									<span class="form-block-error" aria-live="polite"></span>
 								</div>
@@ -509,8 +517,8 @@
 		<span data-watch aria-hidden="true" class="scroll-up-anchor"></span>
 	</div>
 
-	<script src="https://cdn.lordicon.com/bhenfmcm.js?_v=20230614202114"></script>
-	<script src="js/app.min.js?_v=20230614202114"></script>
+	<script src="https://cdn.lordicon.com/bhenfmcm.js?_v=20230614203303"></script>
+	<script src="js/app.min.js?_v=20230614203303"></script>
 </body>
 
 </html>
