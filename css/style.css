@@ -522,6 +522,7 @@ legend {
 .header__top {
   background-color: var(--bg-black);
   color: var(--color-white);
+  padding: 0.625rem 0;
 }
 
 .header__top-wrapper {
@@ -534,8 +535,6 @@ legend {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
 }
 
 .header__contacts {
