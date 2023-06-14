@@ -7,7 +7,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
-	<meta name="description" content="Expert SM Sample">
+	<meta name="description" content="Проет референс сайта Expert SM">
 	<meta name="author" content="Anar Huseynov">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -17,8 +17,8 @@
 	<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css?_v=20230614193016" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230614193016">
+	<link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css?_v=20230614200527">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230614200527">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
 			<div data-sticky-header class="header__body">
 				<div class="header__container header__body-wrapper">
 					<div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo" class="logo__img"></a></div>
-					<nav role="navigation" data-has-submenu class="main-menu">
+					<nav data-has-submenu class="main-menu">
 						<ul class="main-menu__list main-navigation">
 							<li class="main-menu__item link-active"><a href="#" class="main-menu__link">Главная</a></li>
 							<li class="main-menu__item" data-dropdown><a href="#" class="main-menu__link">О компании</a>
@@ -170,102 +170,108 @@
 				<div class="services__container">
 					<h2 class="title-secondary">Услуги</h2>
 					<div class="services__items mt-md">
-						<figure class="services__item item-service">
-							<a href="#" class="item-service__wrapper">
-								<div class="item-service__img-block">
+						<article class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper">
 									<picture><source srcset="img/law-service/law-service.webp" type="image/webp"><img src="img/law-service/law-service.webp" alt="Юридические услуги" class="item-service__img"></picture>
+								</a>
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Юридические услуги</h3>
 								</div>
-								<figcaption class="item-service__caption">
-									<div class="item-service__title-block">
-										<h3 class="item-service__title">Юридические услуги</h3>
-
-									</div>
-									<div class="item-service__link-block">
-										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
-												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
-											</svg> </a>
-									</div>
-								</figcaption>
-							</a>
-
-						</figure>
-						<figure class="services__item item-service">
-							<a href="#" class="item-service__wrapper">
-								<div class="item-service__img-block">
-									<picture><source srcset="img/law-service/migration-service.webp" type="image/webp"><img src="img/law-service/migration-service.webp" alt="Миграционные услуги" class="item-service__img"></picture>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
 								</div>
-								<figcaption class="item-service__caption">
-									<div class="item-service__title-block">
-										<h3 class="item-service__title">Миграционные услуги</h3>
+							</div>
 
-									</div>
-									<div class="item-service__link-block">
-										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
-												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
-											</svg> </a>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-						<figure class="services__item item-service">
-							<a href="#" class="item-service__wrapper">
-								<div class="item-service__img-block">
+
+						</article>
+						<article class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper"><picture><source srcset="img/law-service/migration-service.webp" type="image/webp"><img src="img/law-service/migration-service.webp" alt="Миграционные услуги" class="item-service__img"></picture></a>
+
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Миграционные услуги</h3>
+
+								</div>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
+
+						</article>
+						<article class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper">
 									<picture><source srcset="img/law-service/audit-service.webp" type="image/webp"><img src="img/law-service/audit-service.webp" alt="Аудит, консалтинг, бухгалтерский аутсорсин" class="item-service__img"></picture>
+								</a>
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Аудит, консалтинг, бухгалтерский аутсорсинг</h3>
+
 								</div>
-								<figcaption class="item-service__caption">
-									<div class="item-service__title-block">
-										<h3 class="item-service__title">Аудит, консалтинг, бухгалтерский аутсорсинг</h3>
-
-									</div>
-									<div class="item-service__link-block">
-										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
-												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
-											</svg> </a>
-									</div>
-								</figcaption>
-							</a>
-
-						</figure>
-						<figure class="services__item item-service">
-							<a href="#" class="item-service__wrapper">
-								<div class="item-service__img-block">
-									<picture><source srcset="img/law-service/licence-service.webp" type="image/webp"><img src="img/law-service/licence-service.webp" alt="Лицензирование бизнеса" class="item-service__img"></picture>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
 								</div>
-								<figcaption class="item-service__caption">
-									<div class="item-service__title-block">
-										<h3 class="item-service__title">Лицензирование бизнеса</h3>
+							</div>
 
-									</div>
-									<div class="item-service__link-block">
-										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
-												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
-											</svg> </a>
-									</div>
-								</figcaption>
-							</a>
 
-						</figure>
-						<figure class="services__item item-service">
-							<a href="#" class="item-service__wrapper">
-								<div class="item-service__img-block">
-									<img src="img/law-service/tax-service.webp" alt="Международное налоговое планирование
-										" class="item-service__img">
+						</article>
+						<atricle class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper"><picture><source srcset="img/law-service/licence-service.webp" type="image/webp"><img src="img/law-service/licence-service.webp" alt="Лицензирование бизнеса" class="item-service__img"></picture></a>
+
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Лицензирование бизнеса</h3>
+
 								</div>
-								<figcaption class="item-service__caption">
-									<div class="item-service__title-block">
-										<h3 class="item-service__title">Международное налоговое планирование
-										</h3>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
 
-									</div>
-									<div class="item-service__link-block">
-										<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
-												<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
-											</svg> </a>
-									</div>
-								</figcaption>
-							</a>
 
-						</figure>
+						</atricle>
+						<atricle class="services__item item-service">
+
+							<div class="item-service__img-block">
+								<a href="#" class="item-service__wrapper"><img src="img/law-service/tax-service.webp" alt="Международное налоговое планирование
+											" class="item-service__img"></a>
+
+							</div>
+							<div class="item-service__caption">
+								<div class="item-service__title-block">
+									<h3 class="item-service__title">Международное налоговое планирование
+									</h3>
+
+								</div>
+								<div class="item-service__link-block">
+									<a href="#" class="item-service__link"><span>Узнать больше</span><svg class="item-service__icon">
+											<use xlink:href="img/icons/sprite.svg#icon-right-arrow"></use>
+										</svg> </a>
+								</div>
+							</div>
+
+
+						</atricle>
 					</div>
 				</div>
 			</section>
@@ -511,8 +517,8 @@
 		<span data-watch aria-hidden="true" class="scroll-up-anchor"></span>
 	</div>
 
-	<script src="https://cdn.lordicon.com/bhenfmcm.js?_v=20230614193016"></script>
-	<script src="js/app.min.js?_v=20230614193016"></script>
+	<script src="https://cdn.lordicon.com/bhenfmcm.js?_v=20230614200527"></script>
+	<script src="js/app.min.js?_v=20230614200527"></script>
 </body>
 
 </html>
