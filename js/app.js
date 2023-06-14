@@ -33963,7 +33963,7 @@
             });
         }
         function initSliders() {
-            if (document.querySelector(".swiper")) new core(".swiper", {
+            if (document.querySelector(".main-slider")) new core(".main-slider", {
                 modules: [ Pagination, Autoplay ],
                 observer: true,
                 observeParents: true,
@@ -33978,6 +33978,36 @@
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true
+                },
+                on: {}
+            });
+            if (document.querySelector(".clients-slider")) new core(".clients-slider", {
+                modules: [ Autoplay ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 1e3,
+                loop: true,
+                autoplay: {
+                    delay: 2e3,
+                    disableOnInteraction: false
+                },
+                breakpoints: {
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 3
+                    },
+                    992: {
+                        slidesPerView: 4
+                    },
+                    1268: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    }
                 },
                 on: {}
             });
@@ -34097,6 +34127,28 @@
                 const targetElement = entry.target;
                 if (targetElement !== header) return;
                 stickyBlock.classList.toggle("sticky", !entry.isIntersecting);
+            }));
+        };
+        const scrollTop = function(shownHeightPercent = 30) {
+            const btn = document.querySelector("#scroll-up");
+            const anchor = document.querySelector(".scroll-up-anchor");
+            const pageHeight = document.body.scrollHeight;
+            const topValue = Math.floor(pageHeight / 100 * shownHeightPercent);
+            if (!btn || !anchor || pageHeight < 1e3) return;
+            anchor.style.top = topValue + "px";
+            if (pageHeight >= topValue) btn.classList.add("scroll-up--visible");
+            btn.addEventListener("click", (() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            }));
+            document.addEventListener("watcherCallback", (function(e) {
+                const entry = e.detail.entry;
+                const targetElement = entry.target;
+                if (targetElement !== anchor) return;
+                if (entry.isIntersecting && entry.boundingClientRect.top > 0) btn.classList.add("scroll-up--visible");
+                if (!entry.isIntersecting && entry.boundingClientRect.top > 0) btn.classList.remove("scroll-up--visible");
             }));
         };
         class FormSend {
@@ -37145,7 +37197,7 @@
                 const requiredArray = [ ...this.#requiredElements ];
                 if (!/[0-9]{12}/.test(this.mask.unmaskedValue) && this.#phoneMaskedEl.hasAttribute("required")) this.#showError(this.#phoneMaskedEl);
                 if (!requiredArray.every((field => field.checkValidity()))) {
-                    alert("Please fill all required fields");
+                    alert("Пожалуйста, заполните все обязательные поля");
                     return;
                 }
                 if (this.#form.hasAttribute("data-captcha")) this.#captcha(this); else this.#sendAjax();
@@ -37244,6 +37296,29 @@
         }
         const mainForm = new FormValidation(".form-contact", {});
         var maps_min = __webpack_require__(388);
+        function animate(obj, initVal, lastVal, duration) {
+            let startTime = null;
+            Date.now();
+            const step = currentTime => {
+                if (!startTime) startTime = currentTime;
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+                if (progress < 1) window.requestAnimationFrame(step); else window.cancelAnimationFrame(window.requestAnimationFrame(step));
+            };
+            window.requestAnimationFrame(step);
+        }
+        let text1 = document.getElementById("a1");
+        let text2 = document.getElementById("a2");
+        let text3 = document.getElementById("a3");
+        let text4 = document.getElementById("a4");
+        document.addEventListener("watcherCallback", (function(e) {
+            const entry = e.detail.entry;
+            const targetElement = entry.target;
+            if (targetElement === text1) animate(text1, 0, 20, 3e3);
+            if (targetElement === text2) animate(text2, 9e3, 9700, 3e3);
+            if (targetElement === text3) animate(text3, 0, 57, 3e3);
+            if (targetElement === text4) animate(text4, 99900, 1e5, 3e3);
+        }));
         const center = [ 49.841353, 40.3846808 ];
         const map = maps_min.map({
             key: "f259PDMTbKFRmPcSBZoGiZAw99GAU6VG",
@@ -37260,5 +37335,6 @@
         handleDropdownMenu(".main-menu", 991);
         smoothscroll.polyfill();
         stickyHeader();
+        scrollTop();
     })();
 })();
